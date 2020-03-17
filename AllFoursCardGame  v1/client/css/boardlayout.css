@@ -1,0 +1,321 @@
+/*BlackJack Board Layout*/
+.grid-items {
+    background: black;
+    color: blanchedalmond;
+    padding: 5px;
+    border: 1px red solid;
+}
+.grid {
+    display: grid inline;
+    grid-template-columns:repeat(3,minmax(25px,200px));
+    grid-auto-rows: minmax(50px,280px);
+    grid-gap: 5px;
+}
+.grid-container {
+    position: absolute;
+    top: 50px;
+    left:200px;
+}
+.hand-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(3,100px);
+}
+.hand {
+    border: 1px pink solid;
+    background: white;
+    padding: 2px;
+    color: black;
+    font-size: medium;
+}
+
+.author {
+    font-family:cursive;
+    top:5px;
+    position: absolute;
+    right: 5px;
+}
+/*All Fours Board Layout*/
+.board-grid {
+    position: absolute;
+    right: 10px;
+    display: grid inline;
+    grid-template-columns:minmax(25px,262.5px) minmax(100px,500px) minmax(25px,262.5px);
+    grid-template-rows: minmax(25px,262.5px) minmax(80px,400px) minmax(25px,262.5px);
+
+}
+.grid-section {
+    position: relative;
+    background:white;
+    color: black;
+    padding: 5px;
+    border: 2px orange solid;
+}
+
+/*Player Sections*/
+.player-name{
+    color: red;
+} 
+.p1h2{  
+    bottom:0;
+    right: 20px;
+    position:absolute;
+}
+.p2h2{
+    bottom:0;
+    left: 50%;
+    position:absolute;
+}
+.p3h2{
+    bottom:0;
+    left: 50%;
+    position:absolute;
+}
+.p4h2{
+    bottom:0;
+    right: 10px;
+    position:absolute;
+}
+.p1-card-grid {
+    position: relative;
+}
+.p2-card-grid {
+    position: relative;   
+}
+.p3-card-grid {
+    position: relative;
+}
+.p4-card-grid {
+    position: relative;   
+}
+
+/* Center Play Area*/
+.play-area {
+    position: relative;
+}
+.team1-pot {
+    position: absolute;
+    height: 150px;
+    width: 90px;
+    left: 50px;
+    top: 20px;
+    border: black solid 1px;
+    border-radius: 12.3px;
+    background-image: url(images/brown_fancy.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.team2-pot {
+    transform: rotate(90deg);
+    position: absolute;
+    height: 150px;
+    width: 90px;
+    top:20px;
+    left:50px;
+    border: black solid 1px;
+    border-radius: 12.3px;
+    background-image: url(images/brown_fancy.jpg);
+    background-position: center;
+    background-size: cover;
+}
+#pot {
+    
+    position: absolute;
+    height: 150px;
+    width: 90px;
+    top: 110px;
+    left: 250px;
+    border: black solid 1px;
+    border-radius: 12.3px;
+    z-index: 4;
+      
+}
+.pot1{
+    position: absolute;
+    height: 150px;
+    width: 90px;
+    top: 120px;
+    left: 300px;
+    border: black solid 1px;
+    border-radius: 12.3px;
+    transform: rotate(45deg);
+    background-color: lawngreen;
+    z-index: 3;
+}
+.pot2{
+    position: absolute;
+    height: 150px;
+    width: 90px;
+    top: 200px;
+    left: 260px;
+    border: black solid 1px;
+    border-radius: 12.3px;
+    transform: rotate(100deg);
+    background-color: royalblue;
+    z-index: 2;
+}
+.pot3{
+    position: absolute;
+    height: 150px;
+    width: 90px;
+    top: 125px;
+    left: 220px;
+    border: black solid 1px;
+    border-radius: 12.3px;
+    transform: rotate(130deg);
+    background-color: sandybrown;
+    z-index: 1;
+}
+.trump {
+    position: absolute;
+    height: 150px;
+    width: 90px;
+    top: 50px;
+    left: 50px;
+    border: black solid 1px;
+    border-radius: 12.3px;
+    transform: rotate(90deg);
+}
+.deck {
+    position: absolute;
+    height: 150px;
+    width: 90px;
+    top: 200px;
+    left: 50px;
+    border: black solid 1px;
+    border-radius: 12.3px;
+    z-index: 2;
+}
+.deck-layer {
+    position: absolute;
+    height: 150px;
+    width: 90px;
+    top: 200px;
+    left: 46px;
+    border:red solid 1px;
+    border-radius: 12.3px;
+    z-index: 1;
+}
+/*Buttons*/
+.singleplayer {
+    position: absolute;
+    height: 40px;
+    width: 100px;
+    top: 155px;
+    color:greenyellow;
+    background-color: grey;
+    font-size: 16px;   
+}
+.team {
+    position: absolute;
+    height: 40px;
+    width: 100px;
+    top: 155px;
+    left:110px;
+    color:greenyellow;
+    background-color: grey;
+    font-size: 16px;  
+}
+.createPlayer {
+    position: absolute;
+    height: 40px;
+    width: 125px;
+    top: 240px;
+    color:greenyellow;
+    background-color: grey;
+    font-size: medium;   
+}
+.newgame {
+    position: absolute;
+    height: 40px;
+    width: 125px;
+    top: 500px;
+    color:greenyellow;
+    background-color: grey;
+    font-size: large;
+    visibility: hidden;
+}
+.playcard {
+    position: absolute;
+    top:45px;
+    right:10px;
+    height: 40px;
+    width: 80px;
+    color:greenyellow;
+    background-color: grey;
+    font-size: large;
+}
+.knock {
+    position: absolute;
+    right:10px;
+    height: 40px;
+    width: 80px;
+    color:greenyellow;
+    background-color: grey;
+    font-size: large;
+}
+.newdeck {
+    position: absolute;
+    top: 60px;
+    right:10px;
+    height: 40px;
+    width: 80px;
+    color:greenyellow;
+    background-color: grey;
+    font-size: 16px;
+}
+
+.deal {
+    position: absolute;
+    top:85px;
+    right:10px;
+    height: 45px;
+    width: 80px;
+    color:greenyellow;
+    background-color: grey;
+    font-size: 16px;
+}
+.shuffle {
+    position: absolute;
+    top:130px;
+    right:10px;
+    height: 45px;
+    width: 80px;
+    color:greenyellow;
+    background-color: grey;
+    font-size: 16px;
+}
+/* Inputs*/
+#nameInput {
+    position: absolute;
+    height: 20px;
+    width: 300px;
+    top:200px;
+    color:blueviolet;
+    font-size: large;
+    font-family: cursive;
+}
+/*Display elements*/
+.playerInfo {
+    position: absolute;
+    height: 300px;
+    width: 220px;
+    top: 240px;
+    color:blueviolet;
+    background:transparent;
+    font-size: 18px;
+}
+.playerInfo p {
+    position: absolute;
+    display: inline-flexbox;
+    margin: 20px;
+}
+.firstP {
+    font-size: 20px;
+    color: red;
+}
+.button-log {
+    width: 250px;
+    height:250px;
+    border: 1px black dashed;
+}
